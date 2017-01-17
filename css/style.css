@@ -1,0 +1,17 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 100px;
+}
+
+h1 {
+  font-size: 80px;
+  color: #123456
+}
+
+h2 {
+  color: #123456
+}
+
+div {
+  margin-bottom: 30px;
+}
