@@ -4,14 +4,31 @@ body {
 }
 
 h1 {
-  font-size: 80px;
-  color: #123456
+  font-size: 120px;
+  color: #B21449;
 }
 
 h2 {
-  color: #123456
+  color: #B21449;
 }
 
-div {
-  margin-bottom: 30px;
+header .header-c > ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 20;
+}
+
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #B21449;
+  text-decoration: line-through;
+}
+
+.center {
+  text-align: center;
 }
