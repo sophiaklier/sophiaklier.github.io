@@ -1,15 +1,16 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 100px;
+  background-color: ;
 }
 
-h1 {
-  font-size: 120px;
-  color: #B21449;
-}
+@font-face {
+ font-family: "Bodoni 72";
+ src: url(‘fonts/Bodoni 72.ttc‘);
+ }
+
 
 h2 {
-  color: #B21449;
+  color: #00380E;
 }
 
 header .header-c > ul li {
@@ -19,14 +20,92 @@ header .header-c > ul li {
 }
 
 
+img {
+  width: 250px;
+  height: auto;
+  margin: 0 -3 -53;
+}
+
 a {
   color: #000;
   text-decoration: none;
 }
 
-a:hover {
-  color: #B21449;
+a:hover, .active {
+  color: #00380E;
   text-decoration: line-through;
+}
+
+.logo {
+  font-family: "Bodoni 72", "Didot", serif;
+  color: #00380E;
+  font-size: 290px;
+  font-weight: bolder;
+  line-height: 230px;
+}
+
+.colorchange {
+  -webkit-animation: colorchange 30s infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+      0% {
+
+        color: #A28686;
+      }
+
+      10% {
+
+        color: #A29686;
+      }
+
+      20% {
+
+        color: #A2A186;
+      }
+
+      30% {
+
+        color: #92A286;
+      }
+
+      40% {
+
+        color: #86A291;
+      }
+
+      50% {
+
+        color: #86A2A1;
+      }
+
+      60% {
+
+        color: #868EA2;
+      }
+
+      70% {
+
+        color: #9286A2;
+      }
+      80% {
+
+        color: #9886A2;
+      }
+
+      90% {
+
+        color: #A286A2;
+      }
+
+      100% {
+
+        color: #A28693;
+      }
+}
+
+.button {
+  border: 1px solid #000;
 }
 
 .center {
