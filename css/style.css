@@ -1,113 +1,172 @@
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: ;
+/*css reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
 
 @font-face {
- font-family: "Bodoni 72";
- src: url(‘fonts/Bodoni 72.ttc‘);
- }
-
-
-h2 {
-  color: #00380E;
+  font-family: "Bodoni 72";
+  src: url(‘fonts/Bodoni 72.ttc‘);
 }
 
-header .header-c > ul li {
-  display: inline-block;
-  list-style: none;
-  padding: 0 20;
+
+.center {
+  text-align: center;
 }
 
+/*header .navi > ul li {
+  display: inline;
+  height: 800px;
+}*/
+
+.navi {
+  display: inline;
+}
+
+.background-b {
+  height: 600px;
+  background-color: #000;
+}
+
+.gradient {
+
+  height: 400px;
+  background-color: #000;
+  background-repeat: repeat-x;
+
+  background: -webkit-gradient(linear, 0% 0%, 0% 100% from(#000) to(#fff));
+
+  background: -webkit-linear-gradient(top, #000, #fff);
+
+  background: -moz-linear-gradient(top, #000, #fff);
+
+  background: -ms-linear-gradient(top, #000, #fff);
+
+  background: -o-linear-gradient(top, #000, #fff);
+}
 
 img {
-  width: 250px;
-  height: auto;
-  margin: 0 -3 -53;
+
 }
 
 a {
-  color: #000;
   text-decoration: none;
+  font-family: "Helvetica"
 }
 
 a:hover, .active {
-  color: #00380E;
-  text-decoration: line-through;
+
 }
 
 .logo {
+  color: #000;
   font-family: "Bodoni 72", "Didot", serif;
-  color: #00380E;
   font-size: 290px;
   font-weight: bolder;
   line-height: 230px;
 }
 
 .colorchange {
-  -webkit-animation: colorchange 30s infinite alternate;
+  -webkit-animation: colorchange 20s infinite alternate;
 }
 
 @-webkit-keyframes colorchange {
       0% {
 
-        color: #A28686;
+        color: #FFC7C7;
       }
 
       10% {
 
-        color: #A29686;
+        color: #FFE3C7;
       }
 
       20% {
 
-        color: #A2A186;
+        color: #FFFBC7;
       }
 
       30% {
 
-        color: #92A286;
+        color: #DBFFC7;
       }
 
       40% {
 
-        color: #86A291;
+        color: #C8FFC7;
       }
 
       50% {
 
-        color: #86A2A1;
+        color: #C7FFE6;
       }
 
       60% {
 
-        color: #868EA2;
+        color: #C7FDFF;
       }
 
       70% {
 
-        color: #9286A2;
+        color: #C7E1FF;
       }
       80% {
 
-        color: #9886A2;
+        color: #C7CCFF;
       }
 
       90% {
 
-        color: #A286A2;
+        color: #DFC7FF;
       }
 
       100% {
 
-        color: #A28693;
+        color: #FFC7FF;
       }
 }
 
 .button {
   border: 1px solid #000;
-}
-
-.center {
-  text-align: center;
 }
