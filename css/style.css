@@ -76,6 +76,10 @@ footer {
 	color: #d2d2d2;
 }
 
+.hidden {
+	overflow: hidden;
+}
+
 .border {
 	position: fixed;
 	z-index: -1;
@@ -152,10 +156,8 @@ footer {
 	font-size: 230px;
 	font-weight: bolder;
 	line-height: 190px;
-	margin-right: 44%;
 	margin-left: 20%;
-	padding-top: 80px;
-
+	padding-top: 115px;
 }
 
 .logo-p {
