@@ -42,14 +42,14 @@ table {
 	border-spacing: 0;
 }
 
+
+
 * {
 	text-rendering: optimizeLegibility;
-	/*box-sizing: border-box;*/
 }
 
-
 body {
-	font-family: "Helvetica", Arial, sans-serif;
+	font-family: "Andale Mono", Helvetica, Arial, sans-serif;
 }
 
 header {
@@ -60,23 +60,13 @@ header {
 p {
 	font-size: 11px;
 	opacity: 0.8;
-	line-height: 16px;
-	z-index: -999;
+	line-height: 15px;
 }
-
-/*img {
-	width: auto;
-	height: 100%;
-}*/
 
 a {
 	color: #000;
   text-decoration: none;
-  font-family: "Helvetica";
-}
-
-a,header {
-	padding: 0 50;
+  font-family: "Andale Mono", Helvetica, Arial, sans-serif;
 }
 
 footer {
@@ -85,7 +75,6 @@ footer {
 	font-size: 12px;
 	color: #d2d2d2;
 }
-
 
 .border {
 	position: fixed;
@@ -125,26 +114,39 @@ footer {
 	font-weight: lighter;
 }
 
+.a-padding {
+	padding: 0 50;
+}
+
 .header-p {
 	padding-top: 60px;
 	padding-bottom: 30px;
-	font-size: 20px;
+	font-size: 25px;
+}
+
+.header-work {
+	padding-top: 35px;
+	padding-bottom: 30px;
+	font-size: 25px;
+}
+
+.header-index {
+	padding-top: 140px;
+	font-size: 25px;
 }
 
 .logo {
+	display: inline-block;
 	color: #000;
 	font-family: "Bodoni 72", "Didot", serif;
 	font-size: 230px;
 	font-weight: bolder;
 	line-height: 190px;
-	float: left;
-	/*margin-right: 44%;*/
-	margin-left: 20%;
-	overflow: hidden;
-	display: inline-block;
 }
 
 .logo-index {
+	display: inline-block;
+	overflow: hidden;
 	color: #000;
 	font-family: "Bodoni 72", "Didot", serif;
 	font-size: 230px;
@@ -153,48 +155,25 @@ footer {
 	margin-right: 44%;
 	margin-left: 20%;
 	padding-top: 80px;
-	overflow: hidden;
-	display: inline-block;
+
 }
 
-.header-index {
-	padding-top: 140px;
-	font-size: 20px;
+.logo-p {
+	margin-left: 20%;
+	overflow: hidden;
 }
 
 .position-p {
-	margin-left: 20%;
-	margin-right: 20%;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	-webkit-column-count: 2;
-	-moz-column-count: 2;
-	column-count: 2;
-	-webkit-column-gap: 50px;
-	-moz-column-gap: 50px;
-	column-gap: 50px;
-	/*-webkit-column-width: 100px;
-	-moz-column-width: 100px;
-	column-width: 100px;*/
-}
-
-.position-p2 {
-	float: right;
-	margin-right: 10%;
-	float: right;;
-	margin-top: 284px;
+	display: inline-block;
+	margin-left: 5%;
 }
 
 .center {
   text-align: center;
 }
 
-.bg-black {
-  height: 550px;
-  background-color: #000;
-}
-
 .img-t {
+	overflow: hidden;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
@@ -209,6 +188,7 @@ footer {
 }
 
 .img-l {
+	overflow: hidden;
 	position: absolute;
 	left: -528px;
 	top: 95px;
@@ -221,6 +201,7 @@ footer {
 }
 
 .img-r {
+	overflow: hidden;
 	position: absolute;
 	right: -455px;
 	top: 130px;
@@ -242,6 +223,13 @@ footer {
 	-moz-transition: 0.7s ease-in-out;
 	-o-transition: 0.7s ease-in-out;
 	transition: 0.7s ease-in-out;
+}
+
+.social-r {
+  position: absolute;
+	right: -46px;
+	margin-top: 600px;
+	zoom: 0.65;
 }
 
 img.img-t:hover {
@@ -276,13 +264,6 @@ img.img-r2:hover {
 	transform: translate(-492px,0);
 }
 
-.social-r {
-  position: absolute;
-	right: -46px;
-	margin-top: 600px;
-	zoom: 0.65;
-}
-
 .colorchange {
   -webkit-animation: colorchange 20s infinite alternate;
 }
@@ -291,6 +272,10 @@ img.img-r2:hover {
   -webkit-animation: colorchange2 20s infinite alternate;
 }
 
+.bg-black {
+  height: 550px;
+  background-color: #000;
+}
 
 .gradient {
 
@@ -309,7 +294,10 @@ img.img-r2:hover {
   background: -o-linear-gradient(top, #000, #fff);
 }
 
-
+@font-face {
+  font-family: "Andale Mono";
+  src: url(‘fonts/Andale Mono.ttf‘);
+}
 
 @font-face {
   font-family: "Bodoni 72";
@@ -318,112 +306,91 @@ img.img-r2:hover {
 
 @-webkit-keyframes colorchange {
       0% {
-
         color: #FFC7C7;
       }
 
       10% {
-
         color: #FFE3C7;
       }
 
       20% {
-
         color: #FFFBC7;
       }
 
       30% {
-
         color: #DBFFC7;
       }
 
       40% {
-
         color: #C8FFC7;
       }
 
       50% {
-
         color: #C7FFE6;
       }
 
       60% {
-
         color: #C7FDFF;
       }
 
       70% {
-
         color: #C7E1FF;
       }
       80% {
-
         color: #C7CCFF;
       }
 
       90% {
-
         color: #DFC7FF;
       }
 
       100% {
-
         color: #FFC7FF;
       }
 }
 
 @-webkit-keyframes colorchange2 {
       0% {
-
         background-color: #FFC7C7;
       }
 
       10% {
-
         background-color: #FFE3C7;
       }
 
       20% {
-
         background-color: #FFFBC7;
       }
 
       30% {
-
         background-color: #DBFFC7;
       }
 
       40% {
-
         background-color: #C8FFC7;
       }
 
       50% {
-
         background-color: #C7FFE6;
       }
 
       60% {
-
         background-color: #C7FDFF;
       }
 
       70% {
-
         background-color: #C7E1FF;
       }
-      80% {
 
+      80% {
         background-color: #C7CCFF;
       }
 
       90% {
-
         background-color: #DFC7FF;
       }
 
       100% {
-
         background-color: #FFC7FF;
       }
 }
